@@ -10,7 +10,7 @@ columns.remove('Unnamed: 0')
 print(columns)
 data = []
 for col in columns:
-    trace = go.Bar(y=df['Unnamed: 0'], x=df[col],orientation='h', name=col)
+    trace = go.Bar(y=df['Unnamed: 0'], x=df[col], orientation='h', name=col)
     data.append(trace)
 
 layout = go.Layout(title='Mock survey results', barmode='stack')
